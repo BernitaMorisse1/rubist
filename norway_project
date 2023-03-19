@@ -1,0 +1,28 @@
+Remove sqlite3 ubuntu
+sudo apt-get autoremove sqlite3
+
+
+archive the file
+gzip --keep input.file
+without the keep option - the original will be deleted
+
+archiving
+
+tar -cvf Name.tar /etc/folder1 /var/www/folder2
+gzip Name.tar
+
+this will make the archive and compress it
+tar -czvf Name.tar.gz /path/to/directory
+tar -czvf big_5_thumbs_7_hetzner.tar.gz /var/www
+
+
+Write the names of all folders in the desired directory to a file
+cd /var/www/
+ls -R > all.txt
+
+
+Finds all files with a given name and writes the result in the form of a full path to a txt file
+find /var/www/all/ -name index.php -print > /var/www/folders.txt
+cp /var/www/monet.php /var/www/all/domain/monet.php
+cp /var/www/ps/6gePDu.js /var/www/all/domain/ps/6gePDu.js
+cp -r /var/www/ps /var/www/all/webpin.ru/ps/
